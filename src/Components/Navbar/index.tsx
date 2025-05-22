@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const githubLink = "https://github.com/";
 const linkedinLink = "https://www.linkedin.com/in/sowmya-boorla-1756832b3/";
-const cvLink = "/Boorla-Sowmya-Resume.pdf";
+const cvLink = "/SowmyaResumeBlack.pdf";
 
 const Navbar = () => {
   return (
