@@ -2,6 +2,7 @@
 
 import { FaPhoneAlt, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const contactItems = [
   {
@@ -46,14 +47,14 @@ const Contact = () => {
           >
             {item.icon}
             {item.link ? (
-              <a
+              <Link
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-base sm:text-lg hover:underline hover:text-[#ad00fe]/90 transition"
               >
                 {item.label}
-              </a>
+              </Link>
             ) : (
               <span className="text-base sm:text-lg">{item.label}</span>
             )}

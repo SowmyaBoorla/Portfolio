@@ -11,7 +11,7 @@ const About = () => {
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center mb-6 text-gray-300">
-            Hello! I'm a passionate <span className="font-semibold text-white">Frontend Developer</span> currently working at
+            Hello! Im a passionate <span className="font-semibold text-white">Frontend Developer</span> currently working at
             <span className="font-semibold text-white"> Vithi IT Solutions</span> since <span className="text-white font-semibold">March 1st, 2024</span>.
             I specialize in creating responsive, user-friendly interfaces using modern web technologies.
           </p>
@@ -35,7 +35,7 @@ const About = () => {
           </div>
 
           <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center text-gray-300 mt-6">
-            I'm always eager to learn and follow best practices to deliver clean, maintainable, and scalable frontend code.
+            Im always eager to learn and follow best practices to deliver clean, maintainable, and scalable frontend code.
           </p>
         </div>
       </div>

@@ -64,7 +64,7 @@ const Skills = () => {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-          {skills.map((skill, index) => (
+          {skills.map((skill) => (
             <motion.div
               key={`${skill}-${reverse ? 'rev' : 'fwd'}`}
               className="bg-[#1f1f1f] border border-yellow-400/20 text-[#ad00fe] px-4 py-2 sm:px-6 sm:py-3 rounded-full shadow-md hover:bg-[#ad00fe] hover:text-black transition duration-300 cursor-pointer text-sm sm:text-base md:text-lg font-semibold backdrop-blur-sm"

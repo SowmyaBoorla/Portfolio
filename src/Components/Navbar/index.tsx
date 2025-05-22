@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Github, Linkedin } from "lucide-react";
-import ThemeToggle from "../ThemeToggle";
+import Link from "next/link";
 
 const githubLink = "https://github.com/";
 const linkedinLink = "https://www.linkedin.com/in/sowmya-boorla-1756832b3/";
@@ -16,14 +16,14 @@ const Navbar = () => {
           className="text-[#ad00fe] text-lg sm:text-2xl font-extrabold tracking-wide animate-pulse"
           style={{ fontFamily: "'Poppins', sans-serif" }}
         >
-          <a href="/">Portfolio</a>
+          <Link href="/">Portfolio</Link>
         </h1>
       </div>
 
       {/* Right: Icons + Button */}
       <div className="flex items-center gap-2 sm:gap-4">
         {/* Social Icons */}
-        <a
+        <Link
           href={githubLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -31,8 +31,8 @@ const Navbar = () => {
           aria-label="GitHub"
         >
           <Github size={16} className="text-[#ad00fe] sm:text-[#ad00fe]" />
-        </a>
-        <a
+        </Link>
+        <Link
           href={linkedinLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -40,16 +40,16 @@ const Navbar = () => {
           aria-label="LinkedIn"
         >
           <Linkedin size={16} className="text-[#ad00fe] sm:text-[#ad00fe]" />
-        </a>
+        </Link>
 {/* <div> <ThemeToggle /></div> */}
         {/* Download CV Button */}
-        <a
+        <Link
           href={cvLink}
           download
           className="px-2 py-1 sm:px-3 sm:py-2 border-2 border-[#ad00fe] text-[#ad00fe] hover:bg-[#ad00fe] hover:text-black transition rounded-lg font-semibold text-xs sm:text-sm whitespace-nowrap"
         >
           Download CV
-        </a>
+        </Link>
       </div>
     </header>
   );

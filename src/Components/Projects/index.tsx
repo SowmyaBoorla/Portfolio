@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 
 const Projects = () => {
@@ -9,7 +10,7 @@ const Projects = () => {
       description:
         "A website for Shatavahana - a restaurant specializing in traditional cuisine.",
       link: "https://www.sathavahanakitchen.com/",
-      image: "shathavahana.png",
+      image: "/shathavahana.png",
       tools: ["Next.js", "Tailwind CSS", "TypeScript"],
     },
     {
@@ -18,7 +19,7 @@ const Projects = () => {
       description:
         "The official website of Vithi IT, showcasing tech services and solutions.",
       link: "https://vithiit.com",
-      image: "vithi.png",
+      image: "/vithi.png",
       tools: ["Next.js", "Tailwind CSS", "JavaScript"],
     },
     {
@@ -27,7 +28,7 @@ const Projects = () => {
       description:
         "An HRMS application for Kotrike to manage employees and attendance.",
       link: "https://kotrike-hrms.vercel.app/",
-      image: "kotrike.png",
+      image: "/kotrike.png",
       tools: ["React", "Typescript", "REST API", "Tailwind CSS"],
     },
     {
@@ -35,7 +36,7 @@ const Projects = () => {
       name: "Amaiya Site",
       description: "The website for Amaiya - a modern lifestyle brand.",
       link: "https://amaiya.vercel.app/",
-      image: "amaiya.png",
+      image: "/amaiya.png",
       tools: ["Next.js", "Tailwind CSS", "TypeScript"],
     },
     {
@@ -44,7 +45,7 @@ const Projects = () => {
       description:
         "A website for Slay Coffee - showcasing their premium coffee products.",
       link: "https://slaycoffee.in/",
-      image: "slaycofee.png",
+      image: "/slaycofee.png",
       tools: ["Next.js", "CSS", "TailwindCSS", "Graphql"],
     },
   ];
@@ -95,9 +96,11 @@ const Projects = () => {
 
             {/* Right Side - Image */}
             <div className="md:w-1/2 w-full max-h-[300px] md:max-h-full">
-              <img
+              <Image
                 src={project.image}
                 alt={project.name}
+                  width={400}
+  height={400}
                 className="w-full h-full object-cover"
               />
             </div>
