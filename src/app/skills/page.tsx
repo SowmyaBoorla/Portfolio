@@ -1,10 +1,10 @@
-import Header from '@/Components/Header'
+import Skills from '@/Components/Skills'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Header/>
+        <Skills/>
     </div>
   )
 }

@@ -1,10 +1,10 @@
-import Header from '@/Components/Header'
+import Contact from '@/Components/Contact'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Header/>
+        <Contact/>
     </div>
   )
 }

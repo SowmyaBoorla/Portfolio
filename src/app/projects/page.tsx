@@ -1,10 +1,10 @@
-import Header from '@/Components/Header'
+import Projects from '@/Components/Projects'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Header/>
+        <Projects/>
     </div>
   )
 }

@@ -1,0 +1,28 @@
+.typewriter-wrapper {
+  display: inline-block;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.typewriter-wrapper.scale-in {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.typewriter-wrapper.scale-out {
+  transform: scale(1);
+  opacity: 0.9;
+}
+
+.typewriter {
+  font-family: monospace;
+  font-size: 24px;
+  white-space: pre;
+  border-right: 3px solid yellow;
+  animation: blinkCursor 0.75s steps(1) infinite;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
